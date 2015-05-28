@@ -1,6 +1,7 @@
 {
 	"distribute": {
-		"local": ""
+		"local": "/Applications/AMPPS/www/prototype/",
+		"ftp": {}
 	}
 
 }

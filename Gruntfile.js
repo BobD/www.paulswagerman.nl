@@ -13,9 +13,16 @@ module.exports = function(grunt) {
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
 
     connect: {
-      build: {
+      desktop: {
         options: {
-          base: 'build',
+          base: 'build/desktop',
+          keepalive: true,
+          open: true
+        }
+      },
+      mobile: {
+        options: {
+          base: 'build/mobile',
           keepalive: true,
           open: true
         }
@@ -23,27 +30,34 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      build: {
+      desktop: {
        files: [
-        {expand: true, cwd: 'src/images/', src: ['**/*.*'], dest: 'build/images', filter: 'isFile'},
-        {expand: true, cwd: 'src/scripts/', src: ['**/*.*'], dest: 'build/scripts', filter: 'isFile'},
-        {src: 'src/data/albums.json',  dest: 'build/scripts/albums.json'},
-        {expand: true, cwd: 'bower_components/jquery/dist/', src: ['jquery.min.*'], dest: 'build/scripts/lib/jquery', filter: 'isFile'},
-        {expand: true, cwd: 'bower_components/underscore/', src: ['underscore-min.*'], dest: 'build/scripts/lib/underscore', filter: 'isFile'}
+          {expand: true, cwd: 'src/desktop/images/', src: ['**/*.*'], dest: 'build/desktop/images', filter: 'isFile'},
+          {expand: true, cwd: 'src/desktop/scripts', src: ['**/*.*'], dest: 'build/desktop/scripts', filter: 'isFile'},
+          {expand: true, cwd: 'bower_components/jquery/dist/', src: ['jquery.min.*'], dest: 'build/desktop/scripts/vendors/jquery', filter: 'isFile'},
+          {expand: true, cwd: 'bower_components/underscore/', src: ['underscore-min.*'], dest: 'build/desktop/scripts/vendors/underscore', filter: 'isFile'}
+        ]
+      },
+      mobile: {
+       files: [
+          {expand: true, cwd: 'src/mobile/images/', src: ['**/*.*'], dest: 'build/mobile/images', filter: 'isFile'},
+          {expand: true, cwd: 'src/mobile/scripts', src: ['**/*.*'], dest: 'build/mobile/scripts', filter: 'isFile'},
+          {expand: true, cwd: 'bower_components/underscore/', src: ['underscore-min.*'], dest: 'build/mobile/scripts/vendors/underscore', filter: 'isFile'},
+          {src: 'bower_components/fastclick/lib/fastclick.js',  dest: 'build/mobile/scripts/vendors/fastclick.js'}
         ]
       },
       dist: {
         files: [
-          {expand: true, cwd: 'build/css/', src: ['**/*.*'], dest: 'dist/css', filter: 'isFile'},
-          {expand: true, cwd: 'build/scripts/', src: ['**/*.*'], dest: 'dist/scripts', filter: 'isFile'}
+          {expand: true, cwd: 'build/desktop', src: ['**/*.*'], dest: 'dist/desktop', filter: 'isFile'},
+          {expand: true, cwd: 'build/mobile', src: ['**/*.*'], dest: 'dist/mobile', filter: 'isFile'}
         ]
       }
     },
 
     cssmin: {
-      build: {
+      desktop: {
         files: {
-          'build/css/style.min.css': ['build/css/style.css']
+          'build/desktop/css/style.min.css': ['build/desktop/css/style.css']
         }
       }
     },
@@ -55,32 +69,52 @@ module.exports = function(grunt) {
 
     // https://github.com/gruntjs/grunt-contrib-sass
     sass: {
-      build: {
+      desktop: {
         files: {
-          'build/css/style.css': 'src/scss/style.scss',
-          'build/css/develop.css': 'src/scss/develop.scss'
+          'build/desktop/css/develop.css': 'src/desktop/scss/develop.scss',
+          'build/desktop/css/style.css': 'src/desktop/scss/style.scss'
+        }
+      },
+      mobile: {
+        files: {
+          'build/mobile/css/develop.css': 'src/mobile/scss/develop.scss',
+          'build/mobile/css/style.css': 'src/mobile/scss/style.scss'
         }
       }
     },
 
     // https://github.com/nDmitry/grunt-autoprefixer
-    autoprefixer:{
-      build: {
-        options: {
-        },
-        src: 'build/css/style.css',
-        dest: 'build/css/style.css'
-      }
+    autoprefixer: {
+      desktop: {
+        expand: true,
+        flatten: true,
+        src: 'build/desktop/css/*.css',
+        dest: 'build/desktop/css/'
+      },
+      mobile: {
+        expand: true,
+        flatten: true,
+        src: 'build/mobile/css/*.css',
+        dest: 'build/mobile/css/'
+      },
     },
 
     // https://github.com/gruntjs/grunt-contrib-requirejs
     requirejs: {
-      compile: {
+      desktop: {
         options: {
-          baseUrl: "build/scripts",
-          mainConfigFile: "build/scripts/main.js",
+          baseUrl: "build/desktop/scripts",
+          mainConfigFile: "build/desktop/scripts/main.js",
           name: "main",
-          out: "build/scripts/main.min.js"
+          out: "build/desktop/scripts/main.min.js"
+        }
+      },
+      mobile: {
+        options: {
+          baseUrl: "build/mobile/scripts",
+          mainConfigFile: "build/mobile/scripts/main.js",
+          name: "main",
+          out: "build/mobile/scripts/main.min.js"
         }
       }
     },
@@ -112,6 +146,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task.
-  grunt.registerTask('default', ['clean', 'copy:build', 'data', 'sass', 'autoprefixer', 'cssmin', 'compile', 'copy:dist']);
+  grunt.registerTask('default', ['clean', 'copy:desktop', 'copy:mobile', 'data', 'sass', 'autoprefixer', 'cssmin', 'html:desktop', 'html:mobile', 'copy:dist']);
 
 };
