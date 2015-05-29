@@ -1,9 +1,9 @@
 requirejs.config({
    paths: {
    	 jquery: 'vendors/jquery/jquery.min',
+   	 underscore: 'vendors/underscore/underscore-min',
    	 domReady: 'modules/helpers/domready',
    	 text: 'modules/helpers/text',
-     underscore: 'lib/underscore/underscore-min',
      routes: 'modules/routes',
      section: 'modules/sections/section'
   }

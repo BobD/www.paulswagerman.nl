@@ -1,3 +1,22 @@
 .footer{
+	padding: 0 $box-padding-extended;
+	margin: 0 auto;
+}
 
+.footer__description{
+	display: inline;
+}
+
+.footer__social-list{
+	display: inline;
+}
+
+.footer__social-item{
+	display: inline;
+	margin: 0.5em;
+
+	@include link();
+}
+
+.footer__social-link{
 }

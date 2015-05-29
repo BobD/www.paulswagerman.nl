@@ -1,8 +1,11 @@
 // Base
-$background-color:					#B4B3AC;
-$text-color:						white;
+$background-color:					white;
+$text-color:						grey;
 $link-color:						black;
+$active-link-color:					black;
 $transition-duration:				0.4s;
+$box-padding:						1em;
+$box-padding-extended:				10 * $box-padding;
 
 // https://github.com/ianrose/typesettings
 $base-vertical-unit: 				5px;

@@ -1,0 +1,94 @@
+.content{
+}
+
+.grid{
+
+}
+
+.grid__item{
+	float: left;
+	width: 25%;
+	height: 25%;
+	position: relative;
+	visibility: hidden;
+
+  	&:before {
+    	display: block;
+    	content: "";
+    	width: 100%;
+    	padding-top: 100%;
+  	}
+
+  	&.show{
+  		visibility: visible;
+  	}
+}
+
+.grid__content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: grey;
+	z-index: 1;
+	border: thin solid white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;	
+	padding: $box-padding;
+
+  	.w-2 &{
+  		width: 200%;
+  	}
+
+  	.w-3 &{
+  		width: 300%;
+  	}
+
+  	.w-4 &{
+  		width: 400%;
+  	}
+
+  	.h-2 &{
+  		height: 200%;
+  	}
+
+  	.h-3 &{
+		height: 300%;
+  	}
+
+  	.h-4 &{
+		height: 400%;
+  	}
+
+  	// 
+  	.ripperton &{
+  		background-image: url(http://www.paulswagerman.nl/images/alpos_1_s.jpg);
+  	}
+
+  	.roosegaarde &{
+  		background-image: url(http://www.paulswagerman.nl/images/DSC_2235.jpg);
+  	}
+
+  	.jorisvoorn &{
+  		background-image: url(http://www.paulswagerman.nl/images/fadp.jpg);
+  	}
+
+  	.viewbook &{
+  		background-image: url(http://www.paulswagerman.nl/images/v3.jpg);
+  	}
+
+  	.olympic &{
+  		background-image: url(http://www.paulswagerman.nl/images/ohm1.jpg);
+  	}
+}
+
+.grid__header{
+	color: black;
+	font-weight: 600;
+}
+
+.grid__description{
+	
+}

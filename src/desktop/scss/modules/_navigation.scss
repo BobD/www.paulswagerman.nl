@@ -1,5 +1,16 @@
 .navigation{
-	> ul{
+}
 
-	}
+.navigation__list{
+
+}
+
+.navigation__item{
+	display: inline-block;
+	margin-left: 2em;
+
+	@include link();
+}
+
+.navigation__link{
 }

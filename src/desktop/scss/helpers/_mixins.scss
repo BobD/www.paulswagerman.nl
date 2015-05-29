@@ -2,9 +2,8 @@
 
   a{
     text-decoration: none;
-    text-transform: capitalize;
     color: inherit;
-    // transition: color 0.05s;
+    transition: color 0.05s;
 
     &:hover{
       color: $active-link-color;
