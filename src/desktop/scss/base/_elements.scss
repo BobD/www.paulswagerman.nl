@@ -1,0 +1,12 @@
+html.js{
+}
+
+body, html{
+	width: 100%;
+	height: 100%;
+	// @include debug-vertical-alignment();
+}
+
+body{
+	background-color: $background-color;
+}
