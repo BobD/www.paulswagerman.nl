@@ -146,6 +146,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task.
-  grunt.registerTask('default', ['clean', 'copy:desktop', 'copy:mobile', 'data', 'sass', 'autoprefixer', 'cssmin', 'html:desktop', 'html:mobile', 'copy:dist']);
+  grunt.registerTask('default', ['clean', 'copy:desktop', 'copy:mobile', 'data:desktop', 'data:mobile', 'sass', 'autoprefixer', 'cssmin', 'html:desktop', 'html:mobile', 'copy:dist']);
 
 };

@@ -4,10 +4,10 @@ module.exports = function(grunt) {
 	var path  = require('path');
 	var buildPath = 'build/';
 
-	grunt.registerTask('html', 'Compiles the Handlebar templates', function(buildTarget) {
-		var pages = grunt.file.expand('src/' + buildTarget + '/html/*.html');
-		var partials = grunt.file.expand({cwd: 'src/' + buildTarget + '/html/templates/'}, '**/*.hbs');
-		var data = grunt.option('data');
+	grunt.registerTask('html', 'Compiles the Handlebar templates', function(target) {
+		var pages = grunt.file.expand('src/' + target + '/html/*.html');
+		var partials = grunt.file.expand({cwd: 'src/' + target + '/html/templates/'}, '**/*.hbs');
+		var data = grunt.option('data')[target];
 		var partialName, partialHTML, dir, dir;
 
 		_.each(partials, function(file){
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 			}
 
 			partialName = path.basename(file, '.hbs');
-			partialHTML = grunt.file.read('src/' + buildTarget + '/html/templates/' + file);
+			partialHTML = grunt.file.read('src/' + target + '/html/templates/' + file);
 
 			Handlebars.registerPartial(dir + partialName, partialHTML);
 		});
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 			var template = Handlebars.compile(html);
 			var html = template(data);
 
-			grunt.file.write(buildPath + '/' + buildTarget + '/' +  name + '.html', html);
+			grunt.file.write(buildPath + '/' + target + '/' +  name + '.html', html);
 		}
 
 	});

@@ -9,8 +9,14 @@
     <body class='main'>
 
         {{> sections/header}}
+        
+		<main class='content'>
 
-        {{> sections/content}}
+		  	{{#grid content.grid.home}}
+		  		{{!-- For the HTML, see tasks/grid.js --}}
+			{{/grid}}
+
+		</main>
 
         {{> sections/footer}}
 

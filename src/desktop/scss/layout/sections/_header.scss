@@ -1,6 +1,6 @@
 .header{
 	text-align: justify;
-	padding: 2em $box-padding;
+	padding: 0 $box-padding;
 
 	// http://www.barrelny.com/blog/text-align-justify-and-rwd/
 	&:after{
@@ -12,6 +12,12 @@
 
 .header__logo{
 	display: inline-block;
+	color: $active-link-color;
+}
+
+.header__link{
+	text-decoration: none;
+	color: inherit;
 }
 
 .header__title,

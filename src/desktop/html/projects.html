@@ -10,7 +10,13 @@
 
         {{> sections/header}}
 
-        {{> sections/content}}
+		<main class='content'>
+
+		  	{{#grid content.grid.projects-a}}
+		  		{{!-- For the HTML, see tasks/grid.js --}}
+			{{/grid}}
+
+		</main>
 
         {{> sections/footer}}
 

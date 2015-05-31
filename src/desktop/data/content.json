@@ -1,4 +1,38 @@
 {
-	"home": [
-	]
+	"grid": {
+
+		"home": {
+			"blocks": "16",
+			"projects": [			
+				{"block": "1", "w": "4", "h": "2", "name": "viewbook", "image": "http://www.paulswagerman.nl/images/v3.jpg"},
+				{"block": "9", "w": "4", "h": "2", "name": "Roosegaarde", "image": "http://www.paulswagerman.nl/images/DSC_2235.jpg"}
+			]
+		},
+
+		"projects-a": {
+			"blocks": "16",
+			"projects": [			
+				{"block": "1", "w": "2", "h": "3", "name": "viewbook", "image": "http://www.paulswagerman.nl/images/v3.jpg"},
+				{"block": "3", "w": "2", "h": "1", "name": "Roosegaarde", "image": "http://www.paulswagerman.nl/images/DSC_2235.jpg"},
+				{"block": "7", "w": "1", "h": "1", "name": "Olympic show", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"},
+				{"block": "8", "w": "1", "h": "3", "name": "Joris Voorn", "image": "http://www.paulswagerman.nl/images/fadp.jpg"},
+				{"block": "11", "w": "1", "h": "2", "name": "Ripperton", "image": "http://www.paulswagerman.nl/images/alpos_1_s.jpg"},
+				{"block": "13", "w": "2", "h": "1", "name": "Olympic show", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"}
+			]
+		},
+
+		"projects-b": {
+			"blocks": "16",
+			"projects": [			
+				{"block": "2", "w": "2", "h": "2", "name": "viewbook", "image": "http://www.paulswagerman.nl/images/v3.jpg"},
+				{"block": "1", "w": "1", "h": "3", "name": "Roosegaarde", "image": "http://www.paulswagerman.nl/images/DSC_2235.jpg"},
+				{"block": "7", "w": "1", "h": "1", "name": "Olympic show", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"},
+				{"block": "4", "w": "1", "h": "4", "name": "Joris Voorn", "image": "http://www.paulswagerman.nl/images/fadp.jpg"},
+				{"block": "11", "w": "1", "h": "2", "name": "Ripperton", "image": "http://www.paulswagerman.nl/images/alpos_1_s.jpg"},
+				{"block": "13", "w": "2", "h": "1", "name": "Olympic show", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"},
+				{"block": "10", "w": "1", "h": "1", "name": "Joris Voorn", "image": "http://www.paulswagerman.nl/images/fadp.jpg"}
+			]
+		}
+
+	}
 }
