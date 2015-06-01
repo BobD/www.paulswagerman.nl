@@ -1,16 +1,20 @@
 // Base
 $background-color:					white;
 $text-color:						grey;
-$link-color:						black;
-$active-link-color:					black;
+$text-color-light:					lightgrey;
+$text-color-dark:					black;
+$link-color:						inherit;
 $transition-duration:				0.4s;
-$box-padding:						1em;
+$box-padding:						2em;
 $box-padding-extended:				25%;
+
+// See http://www.mademyday.de/css-height-equals-width-with-pure-css.html
+$box-ratio:							85%;
 
 // https://github.com/ianrose/typesettings
 $base-vertical-unit: 				5px;
 $base-line-multi: 					4;
-$base-font-size: 					11px;
+$base-font-size: 					12px;
 $ms-ratio: 							1.2;
 
 

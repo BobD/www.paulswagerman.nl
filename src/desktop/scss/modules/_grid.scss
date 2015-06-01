@@ -1,27 +1,28 @@
 .grid{
-
+	overflow: hidden;
 }
 
-.grid__item{
+.box__item{
 	float: left;
 	width: 25%;
 	height: 25%;
 	position: relative;
 	visibility: hidden;
 
-  	&:before {
-    	display: block;
-    	content: "";
-    	width: 100%;
-    	padding-top: 100%;
-  	}
+  // http://www.mademyday.de/css-height-equals-width-with-pure-css.html
+	&:before {
+  	display: block;
+  	content: "";
+  	width: 100%;
+  	padding-top: $box-ratio;
+	}
 
-  	&.show{
-  		visibility: visible;
-  	}
+	&.show{
+		visibility: visible;
+	}
 }
 
-.grid__content{
+.box__content{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -33,59 +34,46 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;	
-	padding: $box-padding;
+	padding: 1em $box-padding;
+  text-decoration: none;
+  color: inherit;
 
-  	.w-2 &{
-  		width: 200%;
-  	}
+	.w-2 &{
+		width: 200%;
+	}
 
-  	.w-3 &{
-  		width: 300%;
-  	}
+	.w-3 &{
+		width: 300%;
+	}
 
-  	.w-4 &{
-  		width: 400%;
-  	}
+	.w-4 &{
+		width: 400%;
+	}
 
-  	.h-2 &{
-  		height: 200%;
-  	}
+	.h-2 &{
+		height: 200%;
+	}
 
-  	.h-3 &{
-		height: 300%;
-  	}
+	.h-3 &{
+	height: 300%;
+	}
 
-  	.h-4 &{
-		height: 400%;
-  	}
-
-  	// 
-  	.ripperton &{
-  		background-image: url(http://www.paulswagerman.nl/images/alpos_1_s.jpg);
-  	}
-
-  	.roosegaarde &{
-  		background-image: url(http://www.paulswagerman.nl/images/DSC_2235.jpg);
-  	}
-
-  	.jorisvoorn &{
-  		background-image: url(http://www.paulswagerman.nl/images/fadp.jpg);
-  	}
-
-  	.viewbook &{
-  		background-image: url(http://www.paulswagerman.nl/images/v3.jpg);
-  	}
-
-  	.olympic &{
-  		background-image: url(http://www.paulswagerman.nl/images/ohm1.jpg);
-  	}
+	.h-4 &{
+	height: 400%;
+	}
 }
 
-.grid__header{
-	color: black;
-	font-weight: 600;
+.box__header{
+  color: black;
+  font-weight: 600;
 }
 
-.grid__description{
-	
+.box__description{
+  color: black;
+  display: none;
+  margin-top: 1em;
+
+	.box__content:hover &{
+    display: block;
+  }
 }

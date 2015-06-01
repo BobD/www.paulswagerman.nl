@@ -1,12 +1,12 @@
 <nav class='navigation'>
   <ul class='navigation__list'>
-  	<li class='navigation__item'>
+  	<li class='navigation__item {{#menu_active active 'home'}}{{/menu_active}}'>
   		<a href='index.html' class='navigation__link'>Current</a>
   	</li>
-  	 <li class='navigation__item'>
+  	 <li class='navigation__item {{#menu_active active 'projects'}}{{/menu_active}}'>
   		<a href='projects.html' class='navigation__link'>Projects</a>
   	</li>
-  	<li class='navigation__item'>
+  	<li class='navigation__item {{#menu_active active 'about'}}{{/menu_active}}'>
   		<a href='about' class='navigation__link'>About</a>
   	</li>
   </ul>

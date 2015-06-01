@@ -6,15 +6,19 @@
 
     {{> head}}
 
-    <body class='main'>
+    <body class='main home'>
 
-        {{> sections/header}}
+        {{> sections/header active='home'}}
         
 		<main class='content'>
+
+			<section class='grid'>
 
 		  	{{#grid content.grid.home}}
 		  		{{!-- For the HTML, see tasks/grid.js --}}
 			{{/grid}}
+
+			</section>
 
 		</main>
 

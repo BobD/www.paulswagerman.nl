@@ -1,0 +1,28 @@
+<section class='projects' id='projects'>
+
+  <header class='projects__header'>Past</header>
+
+  <div class='projects__filter'>
+    <span class='sort' data-sort='name'>A &mdash; Z <i class='ison fa fa-caret-down'></i></span>
+    <span class='sort' data-sort='date'>date <i class='icon fa fa-caret-down'></i></span>
+    <span class='sort' data-sort='type'>type <i class='icon fa fa-caret-down'></i></span>
+  </div>
+
+  <ul class='projects__list'>
+  	{{#each content.projects}}
+  	<li class='project' data-type='{{type}}'>
+         <h3 class='name'>{{label}}</h3>
+         <p class='date'>{{date}}</p>
+         <p class='type'>{{type}}</p>
+     	</li>
+  	{{/each}}
+  </ul>
+
+  <header class='projects__footer'>
+    <div class='search__container'>
+      <i class="icon fa fa-search"></i>
+      <input class='search' placeholder="Project name, type or date"/>
+    </div>
+  </header>
+
+</section>

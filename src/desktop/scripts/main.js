@@ -1,6 +1,7 @@
 requirejs.config({
    paths: {
    	 jquery: 'vendors/jquery/jquery.min',
+   	 list: 'vendors/list.js/list.min',
    	 underscore: 'vendors/underscore/underscore-min',
    	 domReady: 'modules/helpers/domready',
    	 text: 'modules/helpers/text',
@@ -13,14 +14,21 @@ require([
 	'!domReady',
 	'jquery',
 	'routes',
-	'section'
-	], function(domReady, $, routes, section) {
-	$('html').removeClass('no-js').addClass('js');
+	'section',
+	'list'
+	], function(domReady, $, routes, section, List) {
+		$('html').removeClass('no-js').addClass('js');
 
-	section.init({
-		$container: $('body')
-	});
+		section.init({
+			$container: $('body')
+		});
 
-	routes.init({});
+		routes.init({});
 
+		var options = {
+		    valueNames: [ 'name', 'type', 'date' ],
+		    listClass: 'projects__list'
+		};
+
+		var projects = new List('projects', options);
 });

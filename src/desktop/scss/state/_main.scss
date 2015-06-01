@@ -1,0 +1,12 @@
+.main{
+
+	&.home{
+
+		.box__header,
+		.box__content:hover .block__description{
+			display: inline-block;
+			font-weight: 600;
+			margin-top: 0;
+		}
+	}
+}

@@ -1,6 +1,7 @@
 .footer{
 	padding: 0 $box-padding-extended;
 	margin: 0 auto;
+	color: $text-color-light;
 }
 
 .footer__description{
@@ -13,7 +14,7 @@
 
 .footer__social-item{
 	display: inline;
-	margin: 0.5em;
+	margin-right: 0.2sem;
 
 	@include link();
 }

@@ -8,13 +8,17 @@
 
     <body class='main'>
 
-        {{> sections/header}}
+        {{> sections/header active='projects'}}
 
 		<main class='content'>
 
+			<section class='grid'>
 		  	{{#grid content.grid.projects-a}}
 		  		{{!-- For the HTML, see tasks/grid.js --}}
 			{{/grid}}
+			</section>
+
+			{{> helpers/projects}}
 
 		</main>
 

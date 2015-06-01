@@ -6,12 +6,12 @@
     transition: color 0.05s;
 
     &:hover{
-      color: $active-link-color;
+      color: $text-color-dark;
     }
   }
 
 	&[class$="active"]{
-		color: $active-link-color;
+		color: $text-color-dark;
 	}
 }
 

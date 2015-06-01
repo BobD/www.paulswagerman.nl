@@ -5,8 +5,8 @@ module.exports = function(grunt) {
 	Handlebars.registerHelper('grid', function(grid, block) {
 		var projectBlocks = grid.projects;
 		var length = parseInt(grid.blocks);
-	    var accum = '';
-	    var template = Handlebars.compile("<div class='grid__item {{#if w}}w-{{w}}{{/if}} {{#if h}}h-{{h}}{{/if}} {{show}}'><div class='grid__content' {{#if image}} style='background-image:url({{image}})'{{/if}}><div class='grid__header'>{{name}}</div><div class='grid__description'></div></div></div>");
+	    var template = Handlebars.compile("<div class='box__item {{#if w}}w-{{w}}{{/if}} {{#if h}}h-{{h}}{{/if}} {{show}}'><a href='' class='box__content' {{#if image}} style='background-image:url({{image}})'{{/if}}><div class='box__header'>{{name}}</div><div class='box__description'>{{description}}</div></a></div>");
+	   	var accum = '';
 	    var project;
 
 	    for(var i = 1; i <= length; ++i){
