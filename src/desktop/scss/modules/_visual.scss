@@ -1,0 +1,41 @@
+$visual-margin: 1%;
+
+.visual{
+
+}
+
+.visual__content{
+	overflow: hidden;
+	margin-bottom: $visual-margin;
+}
+
+.visual__item{
+	height: auto;
+	width: 100%;
+	margin-right: $visual-margin;
+	float: left;
+
+	&:last-child{
+		margin-right: 0;
+	}
+
+	.count-2 &{
+		width: ((100% - ($visual-margin)) / 2);
+	}
+
+	.count-3 &{
+		width: ((100% - (2 * $visual-margin)) / 3);
+	}
+
+	.count-4 &{
+		width: (100 / 4) - 5%;
+	}
+
+	.count-5 &{
+		width: (100 / 5) - 5%;
+	}
+}
+
+.visual__description{
+	margin: 1em 0 1em $box-padding-extended;
+}

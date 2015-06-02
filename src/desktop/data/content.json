@@ -9,28 +9,36 @@
 			]
 		},
 
-		"projects-a": {
+		"projects_v_a": {
 			"blocks": "16",
 			"projects": [			
-				{"block": "1", "w": "2", "h": "3", "name": "viewbook", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "image": "http://www.paulswagerman.nl/images/v3.jpg"},
+				{"block": "1", "w": "3", "h": "3", "name": "viewbook", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "image": "http://www.paulswagerman.nl/images/v3.jpg"},
 				{"block": "3", "w": "2", "h": "1", "name": "Roosegaarde", "description": "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", "image": "http://www.paulswagerman.nl/images/DSC_2235.jpg"},
-				{"block": "7", "w": "1", "h": "1", "name": "Olympic show", "description": "Ut enim ad minim veniam", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"},
+				{"block": "6", "w": "1", "h": "2", "name": "Olympic show", "description": "Ut enim ad minim veniam", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"},
 				{"block": "8", "w": "1", "h": "3", "name": "Joris Voorn", "description": " quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat", "image": "http://www.paulswagerman.nl/images/fadp.jpg"},
-				{"block": "11", "w": "1", "h": "2", "name": "Ripperton", "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu", "image": "http://www.paulswagerman.nl/images/alpos_1_s.jpg"},
-				{"block": "13", "w": "2", "h": "1", "name": "Olympic show", "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"}
+				{"block": "14", "w": "2", "h": "1", "name": "Ripperton", "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu", "image": "http://www.paulswagerman.nl/images/alpos_1_s.jpg"},
+				{"block": "9", "w": "1", "h": "2", "name": "Helen Frik", "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "image": "http://www.paulswagerman.nl/images/frik.jpg"}
 			]
 		},
 
-		"projects-b": {
+		"projects_v_b": {
+			"blocks": "16",
+			"projects": [
+				{"block": "1", "w": "1", "h": "3", "name": "Roosegaarde", "description": "totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo", "image": "http://www.paulswagerman.nl/images/DSC_2235.jpg"},	
+				{"block": "2", "w": "2", "h": "2", "name": "viewbook", "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam", "image": "http://www.paulswagerman.nl/images/v3.jpg"},
+				{"block": "4", "w": "1", "h": "4", "name": "Joris Voorn", "description": "sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt", "image": "http://www.paulswagerman.nl/images/fadp.jpg"},
+				{"block": "7", "w": "1", "h": "1", "name": "Helen Frik", "description": "consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem", "image": "http://www.paulswagerman.nl/images/frik.jpg"},
+				{"block": "10", "w": "1", "h": "1", "name": "Joris Voorn", "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam", "image": "http://www.paulswagerman.nl/images/fadp.jpg"},
+				{"block": "11", "w": "1", "h": "2", "name": "Ripperton", "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet", "image": "http://www.paulswagerman.nl/images/alpos_1_s.jpg"},
+				{"block": "13", "w": "2", "h": "1", "name": "Olympic show", "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"}
+			]
+		},
+
+		"example-project": {
 			"blocks": "16",
 			"projects": [			
-				{"block": "2", "w": "2", "h": "2", "name": "viewbook", "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam", "image": "http://www.paulswagerman.nl/images/v3.jpg"},
-				{"block": "1", "w": "1", "h": "3", "name": "Roosegaarde", "description": "totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo", "image": "http://www.paulswagerman.nl/images/DSC_2235.jpg"},
-				{"block": "7", "w": "1", "h": "1", "name": "Olympic show", "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"},
-				{"block": "4", "w": "1", "h": "4", "name": "Joris Voorn", "description": "sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt", "image": "http://www.paulswagerman.nl/images/fadp.jpg"},
-				{"block": "11", "w": "1", "h": "2", "name": "Ripperton", "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet", "image": "http://www.paulswagerman.nl/images/alpos_1_s.jpg"},
-				{"block": "13", "w": "2", "h": "1", "name": "Olympic show", "description": "consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem", "image": "http://www.paulswagerman.nl/images/ohm1.jpg"},
-				{"block": "10", "w": "1", "h": "1", "name": "Joris Voorn", "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam", "image": "http://www.paulswagerman.nl/images/fadp.jpg"}
+				{"block": "1", "w": "4", "h": "2", "name": "Vertical Citizens", "description": ": a web-documentary on the citizens of the Vertical City", "image": "http://www.paulswagerman.nl/images/v3.jpg"},
+				{"block": "9", "w": "4", "h": "2", "name": "The Scrollytell", "description": ": how to produce a generic system for digital storytelling", "image": "http://www.paulswagerman.nl/images/DSC_2235.jpg"}
 			]
 		}
 
@@ -52,5 +60,56 @@
 		{"label" :"Game creation workshops for children part 2", "type": "interactive", "date": "2014"},
 		{"label" :"Visuals for a big club night", "type": "animation", "date": "2015"},
 		{"label" :"Record sleeves as an alternative numbering system", "type": "print", "date": "2015"}
-	]
+	],
+
+	"pages": {
+		"example": {
+			"title": "Project Title",
+			"links": [
+				{"title": "Link A", "url": "http://www.paulswagerman.nl"},
+				{"title": "Link B", "url": "http://www.bdcreations.nl"}
+			],
+			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+			"visuals": [
+				{
+					"media": [
+						{"type": "image", "src": "http://www.paulswagerman.nl/images/v3.jpg"}
+					],
+					"description": "Caption"
+				},
+				{
+					"media": [
+						{"type": "image", "src": "http://www.paulswagerman.nl/images/frik.jpg"},
+						{"type": "image", "src": "http://www.paulswagerman.nl/images/fadp.jpg"}
+					],
+					"description": "Caption"
+				},
+				{
+					"media": [
+						{"type": "image", "src": "http://www.paulswagerman.nl/images/frik.jpg"},
+						{"type": "image", "src": "http://www.paulswagerman.nl/images/fadp.jpg"},
+						{"type": "image", "src": "http://www.paulswagerman.nl/images/v3.jpg"}
+					],
+					"description": "Caption"
+				}
+			]
+		},
+
+		"about": {
+			"title": "About",
+			"links": [
+				{"title": "Link A", "url": "http://www.paulswagerman.nl"},
+				{"title": "Link B", "url": "http://www.bdcreations.nl"}
+			],
+			"description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.",
+			"visuals": [
+				{
+					"media": [
+						{"type": "image", "src": "http://www.paulswagerman.nl/images/v3.jpg"}
+					],
+					"description": "Caption"
+				}
+			]
+		}
+	}
 }

@@ -8,13 +8,13 @@
 
     <body class='main'>
 
-        {{> sections/header active='about'}}
+        {{> sections/header active='projects'}}
 
 		<main class='content'>
 
 			<article class='detail'>
 
-				{{#with content.pages.about}}
+				{{#with content.pages.example}}
 
 				<header class='detail__header'>
 
@@ -61,8 +61,12 @@
 
 				{{/with}}
 
-			</article>
+				<ul class='detail__nav'>
+					<a class='detail__prev' href=''>Prev:</a>
+					<a class='detail__next' href=''>Next:</a>
+				</ul>
 
+			</article>
 
 		</main>
 
