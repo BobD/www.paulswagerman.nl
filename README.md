@@ -1,4 +1,4 @@
-# bdcreations prototyping environment
+# www.paulswagerman.nl prototyping environment
 A little grunt.js environment to start scaffolding cool new projects. 
 
 The main aim of this prototyping environment is to implement a design quick and easy, and while doing so produce CSS and Javascript files ready for use in a production environment.
