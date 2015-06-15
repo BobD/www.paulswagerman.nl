@@ -31,9 +31,10 @@ Then, go to the project root folder in your terminal and run these commands
 
 1. npm install
 2. bower install
-3. grunt connect
+3. grunt
+4. grunt connect
 
-The after each change you make in any file in the src folder, just run 'grunt' in your terminal and refresh your browser.
+Then after a change in a file in the src folder, just run 'grunt' in your terminal and refresh your browser.
 
 Or better yet, use Livereload (http://livereload.com/) and run 'grunt watch' in your terminal. Then every filechange will refresh the browser.
 
