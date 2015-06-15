@@ -11,10 +11,12 @@
   <ul class='projects__list'>
   	{{#each content.projects}}
   	<li class='project' data-type='{{type}}'>
+      <a class='project__link' href=''>
          <h3 class='name'>{{label}}</h3>
          <p class='date'>{{date}}</p>
          <p class='type'>{{type}}</p>
-     	</li>
+      </a>
+    </li>
   	{{/each}}
   </ul>
 

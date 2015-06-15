@@ -6,6 +6,13 @@
 	margin: 1em 0 2em 0;
 }
 
+.detail__header .detail__link-list{
+	padding-left: $box-padding;
+	width: $box-padding-extended;
+	float: left;
+	height: 100%;
+}
+
 .detail__title{
 	padding-left: $box-padding-extended;
 	margin-bottom: 1em;
@@ -18,10 +25,6 @@
 }
 
 .detail__link-list{
-	padding-left: $box-padding;
-	width: $box-padding-extended;
-	float: left;
-	height: 100%;
 }
 
 .detail__link-item{
@@ -33,6 +36,23 @@
 .detail__link{
 	text-decoration: none;
 	color: inherit;
+	position: relative;
+
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+		right: 0;
+		height: 0.5px;
+		background: $text-color;
+	}
+}
+
+.detail__description,
+.detail__footer{
+	max-width: 60em;
 }
 
 .detail__description{
@@ -47,7 +67,11 @@
 
 .detail__footer{
 	margin-top: 1em;
-	padding-left:  $box-padding-extended;
+	margin-left:  $box-padding-extended;
+}
+
+.detail__footer .detail__link-list{
+	margin-top: 2em;
 }
 
 .detail__nav{

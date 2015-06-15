@@ -57,13 +57,22 @@
 
 				<footer class='detail__footer'>
 					{{description}}
+
+					<ul class='detail__link-list'>
+						{{#each links}}
+							<li class='detail__link-item'>
+								<a class='detail__link' href='{{url}}'>{{title}}</a>
+							</li>
+						{{/each}}
+					</ul>
+
 				</footer>
 
 				{{/with}}
 
 				<ul class='detail__nav'>
-					<a class='detail__prev' href=''>Prev:</a>
-					<a class='detail__next' href=''>Next:</a>
+					<a class='detail__prev' href=''>Prev: Project x</a>
+					<a class='detail__next' href=''>Next: Project x</a>
 				</ul>
 
 			</article>

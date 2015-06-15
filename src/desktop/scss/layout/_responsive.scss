@@ -1,14 +1,100 @@
-@include respond-to(mobile) {
-
-}
-
 @include respond-to(small) {
 
+	// LAYOUT
+	.main{
+		width: 100%;
+		min-width: 0;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.header{
+		text-align: center;
+	}
+
+	.footer{
+		padding: 0;
+	}
+
+
+	// NAVIGATION
+	.navigation{
+		display: block;
+		margin: 1em 0;
+	}
+
+	.navigation__list{
+		text-align: center;
+	}
+
+	.navigation__item{
+		margin: 0 1em;
+	}
+
+	// GRID
+	.box__item{
+		width: 100%;
+		display: none;
+
+		&.show{
+			display: block;
+
+			&:before {
+			  	padding-top: $box-ratio-small-screen;
+			}
+		}
+	}
+
+	.detail__footer,
+	.projects{
+		margin-left: 0;
+	}
+
+	// PROJECTS
+	.project{
+		line-height: 2em;
+		margin-bottom: 0.5em;
+		margin: 0 auto;
+	}
+
+	// PROJECT DETAIL
+	.visual__item{
+		display: block;
+		width: 100% !important;	
+		margin-bottom: 1em;
+	}
+
+	.visual__description{
+		margin-left: 0;
+	}
 }
 
-@include respond-to(large) {
+@include respond-to(medium) {
 
-}
+	// LAYOUT
+	.main{
+		width: 100%;
+		min-width: 0;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 
-@include respond-to(super-large) {
+	.detail__footer,
+	.projects{
+		margin-left: 0;
+	}
+
+	// GRID
+	.box__item{
+		width: 100%;
+		display: none;
+
+		&.show{
+			display: block;
+
+			&:before {
+			  	padding-top: $box-ratio-small-screen;
+			}
+		}
+	}
 }

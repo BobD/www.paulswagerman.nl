@@ -9,12 +9,12 @@
 	position: relative;
 	visibility: hidden;
 
-  // http://www.mademyday.de/css-height-equals-width-with-pure-css.html
+  	// http://www.mademyday.de/css-height-equals-width-with-pure-css.html
 	&:before {
-  	display: block;
-  	content: "";
-  	width: 100%;
-  	padding-top: $box-ratio;
+	  	display: block;
+	  	content: "";
+	  	width: 100%;
+	  	padding-top: $box-ratio;
 	}
 
 	&.show{
@@ -35,8 +35,8 @@
 	background-repeat: no-repeat;
 	background-position: center center;	
 	padding: 1em $box-padding;
-  text-decoration: none;
-  color: inherit;
+  	text-decoration: none;
+  	color: inherit;
 
 	.w-2 &{
 		width: 200%;

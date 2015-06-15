@@ -4,13 +4,12 @@
 	// Compensate for the http://www.barrelny.com/blog/text-align-justify-and-rwd/ trick, see _header.
 	// Need to fix this properly
 	margin-top: -0.6em;
-
-	.projects{
-		margin-top: 2em;
-		padding-left: $box-padding-extended;
-	}
 }
 
+.projects{
+	margin-top: 2em;
+	margin-left: $box-padding-extended;
+}
 
 .content__footer{
 	

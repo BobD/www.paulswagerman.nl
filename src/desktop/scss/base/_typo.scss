@@ -3,5 +3,6 @@ body{
 	letter-spacing: 0.5px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 	color: $text-color;
 }

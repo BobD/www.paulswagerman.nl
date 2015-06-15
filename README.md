@@ -22,10 +22,27 @@ Bob Donderwinkel, bd creations
 
 # Installation
 
+1. Install Node.js: https://nodejs.org/
+2. Install Grunt: http://gruntjs.com/getting-started#installing-the-cli
+3. Install SASS: Run this in your terminal 'gem install sass', or check here http://sass-lang.com/install
+4. Install bower: http://bower.io/#install-bower
+
+Then, go to the project root folder in your terminal and run these commands 
+
+1. npm install
+2. bower install
+3. grunt connect
+
+The after each change you make in any file in the src folder, just run 'grunt' in your terminal and refresh your browser.
+
+Or better yet, use Livereload (http://livereload.com/) and run 'grunt watch' in your terminal. Then every filechange will refresh the browser.
+
+
 # To come
 
 * development/production dependent CSS, Javascript and HTML output
 * shared variables and settings between desktop and mobile
+* Live style guide
 * loads..
 
 
