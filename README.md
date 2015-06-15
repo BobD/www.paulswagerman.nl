@@ -24,7 +24,7 @@ Bob Donderwinkel, bd creations
 
 1. Install Node.js: https://nodejs.org/
 2. Install Grunt: http://gruntjs.com/getting-started#installing-the-cli
-3. Install SASS: Run this in your terminal 'gem install sass', or check here http://sass-lang.com/install
+3. Install SASS: Run 'gem install sass' in your terminal (see http://sass-lang.com/install)
 4. Install bower: http://bower.io/#install-bower
 
 Then, go to the project root folder in your terminal and run these commands 
